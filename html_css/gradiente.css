@@ -1,0 +1,78 @@
+.container{
+	text-align:center;
+	padding:20px 0;
+	width:450px;
+	margin: 0 auto;
+}
+
+.container div{
+	width:100px;
+	height:100px;
+	display:inline-block;
+	margin:2px;
+
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.5) inset, 0 1px 1px #DDD;
+	border-radius:2px;
+
+	color:#666;
+	vertical-align: top;
+	line-height: 230px;
+	font-size: 12px;
+}
+
+#el1{
+	background:linear-gradient(to bottom, #8dabd9 , #FFFFFF);
+}
+
+#el2{
+	background:radial-gradient(#77009e,#FFFFFF);
+}
+
+#el3{
+	background:repeating-linear-gradient(-45deg, #de9dd4, #de9dd4 5px, white 5px, white 10px);
+}
+
+#el4{
+	background:repeating-radial-gradient(#b8e7bf, #b8e7bf 5px, white 1px, white 100px);
+}
+
+/*
+linear-gradient(direction, color-stop1, color-stop2, ...)
+
+	direction	Defines a starting point and a direction (or an angle) along with the gradient effect.
+	
+	color-stop1, color-stop2,...	Color stops are the colors you want to render smooth transitions among. 
+	This value consists of a color value, followed by an optional stop position (a percentage between 0% and 100% or a length along the gradient axis).
+
+
+
+radial-gradient(shape size at position, start-color, ..., last-color)
+
+	shape	Defines the shape of the gradient. Possible values:
+	
+	ellipse (default)
+	circle
+	shape	Defines the shape of the gradient. Possible values:
+
+	size	Defines the size of the gradient. Possible values:
+	
+	farthest-corner (default)
+	closest-side
+	closest-corner
+	farthest-side
+	
+	position	Defines the position of the gradient. Default is "center"
+	
+	start-color, ..., last-color	Color stops are the colors you want to render smooth transitions among. 
+	This value consists of a color value, followed by an optional stop position (a percentage between 0% and 100% or a length along the gradient axis).
+
+
+background: repeating-linear-gradient(angle | to side-or-corner, color-stop1, color-stop2, ...);
+	angle	Defines an angle of direction for the gradient. From 0deg to 360deg. Default is 180deg.
+	
+	side-or-corner	Defines the position of the starting-point of the gradient line. It consists of two keywords: the first one indicates the horizontal side, 
+	left or right, and the second one the vertical side, top or bottom. The order is not relevant and each of the keyword is optional.
+	
+	color-stop1, color-stop2,...	Color stops are the colors you want to render smooth transitions among. This value consists of a color value, followed by an optional 
+	stop position (a percentage between 0% and 100% or a length along the gradient axis).
+*/

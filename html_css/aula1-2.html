@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aula de Introdução HTML/CSS</title>
+		<style type="text/css">
+			p{
+				background: red;
+			}
+			.data{
+				background: yellow;
+			}
+			#email{
+				background: green;
+			}
+			#atencao{
+				color:green;
+				font-family: "Arial",serif;
+			}
+		</style>
+	</head>
+	<body>
+	COLOR
+		<form action="action_page.php">
+		  Select your favorite color:
+		  <input type="color" name="favcolor" value="#ff0000">
+		  <input type="submit">
+		</form>
+		<p class="data">
+		DATE
+		<form>
+		  Birthday:
+		  <input type="date" name="bday">
+		</form>
+		<p class="data">
+		DATE COM ATRIBUTOS NAME, MAX E MIN
+		<form>
+		  Enter a date before 1980-01-01:
+		  <input type="date" name="bday" max="1979-12-31"><br>
+		  Enter a date after 2000-01-01:
+		  <input type="date" name="bday" min="2000-01-02"><br>
+		</form>
+		<p id="email" class="data">
+
+		<em>EMAIL</em>
+		<form>
+		  E-mail:
+		  <input type="email" name="email">
+		</form>
+		<p class="data">
+		MONTH
+		<form>
+		  Birthday (month and year):
+		  <input type="month" name="bdaymonth">
+		</form>
+		<p>
+		<span id="atencao"> NUMBER </span>
+		<form>
+		  Quantity (between 1 and 5):
+		  <input type="number" name="quantity" min="1" max="5">
+		</form>
+		<p>
+		NUMBER COM STEP = 10 
+		<form>
+		  Quantity:
+		  <input type="number" name="points" min="0" max="100" step="10" value="30">
+		</form>
+		<p>
+		RANGE
+		<form>
+		  <input type="range" name="points" min="0" max="10">
+		</form>
+		<p>
+		<em>SEARCH</em>
+		<form>
+		  Search Google:
+		  <input type="search" name="googlesearch">
+		</form>
+		<p>
+		TEL
+		<form>
+		  Telephone:
+		  <input type="tel" name="usrtel">
+		</form><p>
+		TIME
+		<form>
+		  Select a time:
+		  <input type="time" name="usr_time">
+		</form>
+		<p>
+		URL
+		<form>
+		  Add your homepage:
+		  <input type="url" name="homepage">
+		</form>
+	</body>
+</html>

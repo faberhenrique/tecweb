@@ -1,0 +1,108 @@
+/* Style the phonents (nothing interesting here) */
+
+p{
+	font-size: 16px;
+	width: 420px;
+	margin: 20px auto 0;
+	text-align:center;
+}
+
+.container{
+	width: 420px;
+	margin:50px auto 0;
+	overflow: hidden;
+	padding:5px;
+}
+
+.phon{
+	width:30px;
+	height:30px;
+	margin:4px;
+	background-color:#A0DFAC;
+	float:left;
+}
+
+.phon span{
+	position:absolute;
+	top:5px;
+	left:5px;
+	right:5px;
+	bottom:5px;
+	border:2px solid #fff;
+}
+
+/* Selectors for matching the first letter and line: */
+
+p::first-letter{
+	background-color: #666;
+	color: #FFF;
+	font-size: 24px;
+	font-style:normal;
+	display: inline-block;
+	padding: 0 5px;
+	border-radius: 3px;
+	margin-right: 2px;
+	font-family: serif;
+}
+
+p::first-line{
+	font-size: 18px;
+	text-transform: smallcaps;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/* Make the first and last phonents purple */
+
+.phon:first-child,
+.phon:last-child{
+	background-color:#0f1921;
+}
+
+/* Make every other phonent rounded */
+
+.phon:nth-child(odd){
+	border-radius:60%;
+}
+
+/* Make the sixth phonent red */
+
+.phon:nth-child(6){
+	background-color:#cb6364;
+}
+
+/* Style the phonent which contains the span */
+
+.phon:not(:empty){
+	background-color:#444;
+	position:relative;
+
+	-webkit-transform:rotate(25deg);
+	transform:rotate(25deg);
+
+}
+
+/* Target phonents by attribute */
+
+.phon[data-foo=bar1]{
+	background-color:#aaa;
+}
+
+.phon[data-foo=bar2]{
+	background-color:#d7cb89;
+}
+
+/* The attribute value should start with bar. This matches both
+   of the above phonents */
+
+.phon[data-foo^=bar]{
+	width: 16px;
+	height: 16px;
+	margin: 11px;
+}
+
+/* The phonent that follows after the one with data-foo="bar2" attribute */
+
+.phon[data-foo=bar2] + .phon{
+	background-color:#78ccd2;
+}
